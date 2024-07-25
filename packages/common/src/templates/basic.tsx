@@ -6,14 +6,16 @@ import { createTemplate } from "@sacred-craft/valhalla-resource";
 import {
   ResourceMonacoEditor,
   ResourceSave,
+  ResourceRefresh,
   useResourceFileContext,
 } from "@sacred-craft/valhalla-resource-components";
 
 const Editor = () => {
-  const { setRightActions } = useResourceFileContext();
+  const { setRightActions, setLeftActions } = useResourceFileContext();
 
   useEffect(() => {
     setRightActions(<ResourceSave />);
+    setLeftActions(<ResourceRefresh />);
   }, [setRightActions]);
 
   return <ResourceMonacoEditor loading={false} />;

@@ -1,6 +1,6 @@
 {
   "name": "@sacred-craft/valhalla-resource-common",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "exports": {
     ".": "./src/index.ts"
   },
@@ -15,7 +15,7 @@
   "peerDependencies": {
     "@sacred-craft/valhalla-components": "^1.0.1",
     "@sacred-craft/valhalla-resource": "^1.0.1",
-    "@sacred-craft/valhalla-resource-components": "^1.0.3"
+    "@sacred-craft/valhalla-resource-components": "^1.0.5"
   },
   "devDependencies": {
     "@sacred-craft/eslint-config": "workspace:*",
