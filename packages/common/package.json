@@ -12,11 +12,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "peerDependencies": {
-    "@sacred-craft/valhalla-components": "^1.0.1",
-    "@sacred-craft/valhalla-resource": "^1.0.1",
-    "@sacred-craft/valhalla-resource-components": "^1.0.5"
-  },
   "devDependencies": {
     "@sacred-craft/eslint-config": "workspace:*",
     "@sacred-craft/typescript-config": "workspace:*",
@@ -26,9 +21,5 @@
     "eslint": "^8.57.0",
     "tsup": "^8.2.2",
     "typescript": "^5.5.4"
-  },
-  "dependencies": {
-    "lucide-react": "^0.381.0",
-    "next-theme": "^0.1.5"
   }
 }

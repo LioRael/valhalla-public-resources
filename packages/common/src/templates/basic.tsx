@@ -8,14 +8,26 @@ import {
   ResourceSave,
   ResourceRefresh,
   useResourceFileContext,
+  ResourceVersions,
+  ResourceVersionsStatus,
 } from "@sacred-craft/valhalla-resource-components";
 
 const Editor = () => {
   const { setRightActions, setLeftActions } = useResourceFileContext();
 
   useEffect(() => {
-    setRightActions(<ResourceSave />);
-    setLeftActions(<ResourceRefresh />);
+    setRightActions(
+      <>
+        <ResourceVersions />
+        <ResourceRefresh />
+        <ResourceSave />
+      </>
+    );
+    setLeftActions(
+      <>
+        <ResourceVersionsStatus />
+      </>
+    );
   }, [setRightActions]);
 
   return <ResourceMonacoEditor loading={false} />;

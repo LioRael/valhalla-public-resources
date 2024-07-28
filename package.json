@@ -10,6 +10,13 @@
     "version-packages": "changeset version",
     "release": "turbo build && changeset publish"
   },
+  "peerDependencies": {
+    "lucide-react": "^0.381.0",
+    "next-theme": "^0.1.5",
+    "@sacred-craft/valhalla-components": "^1.0.1",
+    "@sacred-craft/valhalla-resource": "^1.0.1",
+    "@sacred-craft/valhalla-resource-components": "^1.0.6"
+  },
   "devDependencies": {
     "@changesets/cli": "^2.27.7",
     "prettier": "^3.2.5",
